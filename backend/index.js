@@ -7,7 +7,13 @@ const db =require('./dbconnection')
 const mongoose= require('mongoose');
 const bodyparser=require('body-parser')
 app.use(bodyparser.json())
-app.use(cors())
+app.use(cors(
+    {
+        origin:{"htttps://Interview"},
+        methods:["POST","GET"],
+        credentials:true
+    }
+));
 //app.use('/',routes)
 //app.listen(5000)  
 const userRouter = require("./Routes/User");
