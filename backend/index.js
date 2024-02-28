@@ -9,7 +9,7 @@ const bodyparser=require('body-parser')
 app.use(bodyparser.json())
 app.use(cors(
     {
-        origin:{"htttps://Interview"},
+        origin:{"htttps://Newproject"},
         methods:["POST","GET"],
         credentials:true
     }
